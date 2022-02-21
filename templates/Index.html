@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <center>
+        <h1>
+            Hello World!
+        </h1>
+        <table border="1">
+            <tr>
+                <th>Biom ID</th>
+                <th>Biom Name</th>
+            </tr>
+            {% for result in data %}
+                <tr>
+                    <td>
+                        {{ result.id }}
+                    </td>
+                    <td>
+                        {{ result.name }}
+                    </td>
+                </tr>
+            {% endfor %}
+        </table>
+    </center>
+</body>
+</html>
