@@ -108,7 +108,7 @@ class Weapon(models.Model):
     craft_id = models.ForeignKey('Craft', on_delete=models.PROTECT, )
 
     class Meta:
-        db_table = "weapon_type"
+        db_table = "weapon"
 
 
 class WeaponDamage(models.Model):
